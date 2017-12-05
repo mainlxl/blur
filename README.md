@@ -1,13 +1,13 @@
-#Blur Bitmap#
+# Blur Bitmap
 
 算法使用的是`IIR`,咱们用的是修改自[落羽の殇博客](https://www.cnblogs.com/tntmonks/p/5291660.html)中的源码
 
-##效率##
+## 效率
 效率还是蛮快的,一图胜千言
 
 ![效率](/image/blur.png)
 
-##用法##
+## 用法
 1. 使用源码库 <br/>
 
     `compile project(':blur-lib')`
