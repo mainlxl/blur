@@ -299,18 +299,18 @@ static jobject blurBitmap(
     AndroidBitmap_lockPixels(env, bmp, (void **) &data);//锁定Bitmap，并且获得指针
     /**********高斯模糊算法作对int数组进行处理***********/
     //调用GaussianBlurFilter函数，把图像数据指针、图片长宽和模糊半径传入(算法来自:https://www.cnblogs.com/tntmonks/p/5291660.html)
-    __android_log_print(ANDROID_LOG_DEBUG, "Mainli", "模糊开始,宽:%d,高%d", info.width, info.height);
+//    __android_log_print(ANDROID_LOG_ERROR, "Native-Mainli", "模糊开始,宽:%d,高%d", info.width, info.height);
     GaussianBlurFilter(data, info.width, info.height, intensity);
-    __android_log_print(ANDROID_LOG_DEBUG, "Mainli", "模糊完成,宽:%d,高%d", info.width, info.height);
+//    __android_log_print(ANDROID_LOG_ERROR, "Native-Mainli", "模糊完成,宽:%d,高%d", info.width, info.height);
     /****************************************************/
     AndroidBitmap_unlockPixels(env, bmp);//解锁
     return bmp;
 }
 
 
-#define JNIREG_CLASS "com/mainli/blur/nativeblur/MainActivity"//指定要注册的类
+#define JNIREG_CLASS "com/mainli/blur/BitmapBlur"//指定要注册的类
 static JNINativeMethod methods[] = {
-        {"blurBitmap", "(Landroid/graphics/Bitmap;F)Landroid/graphics/Bitmap;", (void *) blurBitmap}
+        {"blur", "(Landroid/graphics/Bitmap;F)Landroid/graphics/Bitmap;", (void *) blurBitmap}
 };
 extern "C"
 JNIEXPORT jint
