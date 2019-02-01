@@ -18,5 +18,5 @@
 
 3. 使用so(暂时只提供armeabi和armeabi-v7a)
 
-   1. [armeabi](/armeabi/libblur-lib.so),[armeabi-v7a](/armeabi/libblur-lib.so)
+   1. [SO库](/armeabi)
    2. 直接粘贴`BitmapBlur`类使用注意包名一定要是com.mainli.blur
