@@ -5,6 +5,7 @@
 #include <android/bitmap.h>
 #include <android/log.h>
 #include <time.h>
+
 void CalGaussianCoeff(float sigma, float *a0, float *a1, float *a2, float *a3, float *b1, float *b2,
                       float *cprev, float *cnext) {
     float alpha, lamma, k;
@@ -247,9 +248,8 @@ void gaussianVertical(unsigned char *bufferPerLine, unsigned char *lpRowInitial,
     }
 }
 
-//本人博客:http://tntmonks.cnblogs.com/ 转载请注明出处.
 void
-GaussianBlurFilter(unsigned char *input, int Width, int Height,float GaussianSigma) {
+GaussianBlurFilter(unsigned char *input, int Width, int Height, float GaussianSigma) {
     int Channels = 4;
     int Stride = Channels * Width;
     float a0, a1, a2, a3, b1, b2, cprev, cnext;
@@ -293,12 +293,15 @@ GaussianBlurFilter(unsigned char *input, int Width, int Height,float GaussianSig
 static jobject blurBitmap(
         JNIEnv *env,
         jobject /* this */, jobject bmp, jfloat intensity) {
+    if (intensity <= 0) {
+        return bmp;
+    }
     AndroidBitmapInfo info = {0};//初始化BitmapInfo结构体
     unsigned char *data = NULL;//初始化Bitmap图像数据指针
     AndroidBitmap_getInfo(env, bmp, &info);
     AndroidBitmap_lockPixels(env, bmp, (void **) &data);//锁定Bitmap，并且获得指针
     /**********高斯模糊算法作对int数组进行处理***********/
-    //调用GaussianBlurFilter函数，把图像数据指针、图片长宽和模糊半径传入(算法来自:https://www.cnblogs.com/tntmonks/p/5291660.html)
+    //调用GaussianBlurFilter函数，把图像数据指针、图片长宽和模糊半径传入
 //    __android_log_print(ANDROID_LOG_ERROR, "Native-Mainli", "模糊开始,宽:%d,高%d", info.width, info.height);
     GaussianBlurFilter(data, info.width, info.height, intensity);
 //    __android_log_print(ANDROID_LOG_ERROR, "Native-Mainli", "模糊完成,宽:%d,高%d", info.width, info.height);
