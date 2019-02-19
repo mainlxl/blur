@@ -1,1 +1,1 @@
-include ':app', ':blur-lib'
+include ':app', ':blur'

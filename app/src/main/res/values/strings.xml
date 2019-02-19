@@ -1,3 +1,3 @@
 <resources>
-    <string name="app_name">NativeBlur</string>
+    <string name="app_name">IIR算法模糊图Demo</string>
 </resources>
