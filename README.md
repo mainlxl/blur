@@ -1,11 +1,14 @@
 # Blur Bitmap
 
+![动画](/image/donghua.gif)
+
 算法使用的是`intel`的**[IIR](https://software.intel.com/en-us/articles/iir-gaussian-blur-filter-implementation-using-intel-advanced-vector-extensions)**
 
 ## 效率
-效率还是蛮快的,一图胜千言(release版SO)
-
-![效率](/image/blur.png)
+效率还是蛮快的,一图胜千言(release版so库)
+1. 测试设备选用Nexus 6P(CPU:骁龙810 , RAM:3G)
+2. 测试图片选用800x991分辨率
+![log](/image/blur.jpg)
 
 debug包中模糊效率稍慢,请使用release包测试
 
