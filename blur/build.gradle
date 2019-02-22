@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'  
-version "1.0.0"
-group='com.mainli'
+apply from: 'maven_build.gradle'
 
 android {
     compileSdkVersion 28
@@ -22,7 +20,7 @@ android {
     }
 
     buildTypes {
-        debug{
+        debug {
             minifyEnabled true
         }
         release {
