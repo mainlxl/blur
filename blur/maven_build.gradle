@@ -2,7 +2,7 @@ apply plugin: 'maven'
 
 uploadArchives {
     repositories.mavenDeployer {
-        def deployPath = file("/Users/cmcm/work/Maven")
+        def deployPath = file("../../Maven")
         repository(url: "file://${deployPath.absolutePath}")
         pom.project {
             groupId 'com.mainli'
