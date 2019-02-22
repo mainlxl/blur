@@ -5,11 +5,17 @@
 算法使用的是`intel`的**[IIR](https://software.intel.com/en-us/articles/iir-gaussian-blur-filter-implementation-using-intel-advanced-vector-extensions)**
 
 ## 效率
-效率还是蛮快的,一图胜千言(release版so库)
+效率还是蛮快的(release版so库)
 1. 测试设备选用Nexus 6P(CPU:骁龙810 , RAM:3G)
 2. 测试图片选用800x991分辨率
 
-![log](/image/blur.jpg)
+| 强度 | 用间(ms) |
+|:---:|:---:|
+| 5  |   101 |
+| 10 |   103 |
+| 15 |   105 |
+| 20 |   96  |
+| 25 |   101 |
 
 debug包中模糊效率稍慢,请使用release包测试
 

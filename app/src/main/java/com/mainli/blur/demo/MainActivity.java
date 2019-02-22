@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -50,7 +51,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         linearLayout.addView(buttoLayout, new LinearLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT));
         setContentView(linearLayout);
-        mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.image);
+        mBitmap = getTargetWidthBitmap(R.mipmap.image, 800);
         Log.d("Mainli", "-------------------------------------------------------------------------");
         Log.d("Mainli", "Bitmap(width x height):" + mBitmap.getWidth() + "x" + mBitmap.getHeight());
         Log.d("Mainli", "-------------------------------------------------------------------------");
@@ -68,8 +69,23 @@ public class MainActivity extends Activity implements View.OnClickListener {
         BitmapBlur.blur(mBitmap, intensity);
         Log.d("Mainli", "强度:" + intensity + " - 用时(毫秒):" + (System.currentTimeMillis() - startTime));
         mImageView.setImageBitmap(mBitmap);
-        mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.image);
+        mBitmap = getTargetWidthBitmap(R.mipmap.image, 800);
 
 
     }
+
+    /**
+     * 获取目标[宽度]Bitmap
+     * 高度等比缩放
+     */
+    public Bitmap getTargetWidthBitmap(@DrawableRes int drawableId, int targetWidth) {
+        BitmapFactory.Options opts = new BitmapFactory.Options();
+        opts.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(getResources(), drawableId, opts);
+        opts.inTargetDensity = targetWidth;
+        opts.inDensity = opts.outWidth;
+        opts.inJustDecodeBounds = false;
+        return BitmapFactory.decodeResource(getResources(), drawableId, opts);
+    }
+
 }
