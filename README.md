@@ -27,9 +27,10 @@ debug包中模糊效率稍慢,请使用release包测试
     implementation 'com.mainli:blur:1.0.0'
     ```
 
-2. 减少依赖so库数量，默认aar中添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'
+2. 减少依赖so库数量，默认aar中添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'.
 
-  建议在app的`build.gradle`的`android`下的`defaultConfig`中加入`ndk`标签标明支持的平台版本，以减少依赖的so数量<br/>
+  在app的`build.gradle`的`android`下的`defaultConfig`中加入`ndk`标签标明支持的平台版本，以减少依赖的so数量<br/>
+  
 
   ```java
   android {
@@ -45,6 +46,7 @@ debug包中模糊效率稍慢,请使用release包测试
   ```
 
 3. code中使用
+
   ```java
   	//blur方法默认修改bitmap中数据,调用完成功后(btm == bitmap 二者为同一对象)
   	 Bitmap btm = BitmapBlur.blur(bitmap, intensity)
