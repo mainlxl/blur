@@ -23,13 +23,10 @@ debug包中模糊效率稍慢,请使用release包测试
             maven { url "https://raw.githubusercontent.com/Android-Mainli/Maven/master" }
         }
     }
-
+    //在项目module中添加依赖
     implementation 'com.mainli:blur:1.0.0'
     ```
 
-
-    `maven { url "https://raw.githubusercontent.com/Android-Mainli/Maven/master" }`
-    `implementation 'com.mainli:blur:1.0.0'`
 2. 使用**源码+so**
    1. [SO库](/outLibs/jni)
    2. 直接粘贴`BitmapBlur`类使用注意包名一定要是com.mainli.blur
