@@ -14,7 +14,7 @@
 debug包中模糊效率稍慢,请使用release包测试
 
 ## 用法
-1. 使用Maven <br/>
+1. 依赖<br/>
 
     ```
     //在项目根目录中添加maven地址
@@ -27,13 +27,9 @@ debug包中模糊效率稍慢,请使用release包测试
     implementation 'com.mainli:blur:1.0.0'
     ```
 
-2. 使用**源码+so**
-   1. [SO库](/outLibs/jni)
-   2. 直接粘贴`BitmapBlur`类使用注意包名一定要是com.mainli.blur
+2. 减少依赖so库数量，默认aar中添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'
 
-3. 使用**AAR**
-  1. [点击下载AAR](/outLibs/blur-release.aar)
-  2. 建议在app的`build.gradle`的`android`下的`defaultConfig`中加入`ndk`标签标明支持的平台版本<br/>**aar中默认添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'**
+  建议在app的`build.gradle`的`android`下的`defaultConfig`中加入`ndk`标签标明支持的平台版本，以减少依赖的so数量<br/>
 
   ```java
   android {
@@ -47,7 +43,8 @@ debug包中模糊效率稍慢,请使用release包测试
         省略...
     }
   ```
-  4.用法
+
+3. code中使用
   ```java
   	//blur方法默认修改bitmap中数据,调用完成功后(btm == bitmap 二者为同一对象)
   	 Bitmap btm = BitmapBlur.blur(bitmap, intensity)
