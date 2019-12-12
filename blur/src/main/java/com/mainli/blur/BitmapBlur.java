@@ -8,8 +8,29 @@ import android.support.annotation.Keep;
  */
 @Keep
 public class BitmapBlur {
-    static{
-        System.loadLibrary("blur-lib");
+
+    public interface LibLoader {
+        void loadLibrary(String libName);
     }
-    public native static Bitmap blur(Bitmap bimap, float intensity);
+
+
+    private static boolean isLoadSo = false;
+
+    private native static Bitmap blur(Bitmap bimap, float intensity);
+
+    public static Bitmap blurBitmap(Bitmap bimap, float intensity, LibLoader libLoader) {
+        if (!isLoadSo) {
+            if (libLoader == null) {
+                System.loadLibrary("blur-lib");
+            } else {
+                libLoader.loadLibrary("blur-lib");
+            }
+            isLoadSo = true;
+        }
+        return blur(bimap, intensity);
+    }
+
+    public static Bitmap blurBitmap(Bitmap bimap, float intensity) {
+        return blurBitmap(bimap, intensity, null);
+    }
 }

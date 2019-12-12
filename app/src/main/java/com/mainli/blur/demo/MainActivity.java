@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void blur(int intensity) {
         long startTime = System.currentTimeMillis();
-        BitmapBlur.blur(mBitmap, intensity);
+        BitmapBlur.blurBitmap(mBitmap, intensity);
         Log.d("Mainli", "强度:" + intensity + " - 用时(毫秒):" + (System.currentTimeMillis() - startTime));
         mImageView.setImageBitmap(mBitmap);
         mBitmap = getTargetWidthBitmap(R.mipmap.image, 800);
