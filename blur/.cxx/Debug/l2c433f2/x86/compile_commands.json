@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/l2c433f2/x86",
+  "command": "/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android --gcc-toolchain=/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/sysroot -Dblur_lib_EXPORTS -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++/include -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/sources/android/support/include -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/sources/cxx-stl/llvm-libc++abi/include -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/blur-lib.dir/src/main/cpp/blur-lib.cpp.o -c /Users/lixiaoliang04/work/blur-lib/blur/src/main/cpp/blur-lib.cpp",
+  "file": "/Users/lixiaoliang04/work/blur-lib/blur/src/main/cpp/blur-lib.cpp"
+}
+]

@@ -1,0 +1,18 @@
+                    -H/Users/lixiaoliang04/work/blur-lib/blur
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=14
+-DANDROID_PLATFORM=android-14
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734
+-DCMAKE_ANDROID_NDK=/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734
+-DCMAKE_TOOLCHAIN_FILE=/Users/lixiaoliang04/Library/Android/sdk/ndk/17.2.4988734/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/lixiaoliang04/Library/Android/sdk/cmake/3.18.1/bin/ninja
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/lixiaoliang04/work/blur-lib/blur/build/intermediates/cxx/Debug/l2c433f2/obj/x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/lixiaoliang04/work/blur-lib/blur/build/intermediates/cxx/Debug/l2c433f2/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/l2c433f2/x86
+-GNinja
+                    Build command args: []
+                    Version: 2

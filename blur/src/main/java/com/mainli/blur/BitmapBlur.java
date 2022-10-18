@@ -1,7 +1,7 @@
 package com.mainli.blur;
 
 import android.graphics.Bitmap;
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 
 /**
  * Created by mobimagic on 2017/12/5.
