@@ -26,11 +26,11 @@ debug包中模糊效率稍慢,请使用release包测试
     //在项目根目录中添加maven地址
     allprojects {
         repositories {
-            maven { url "https://raw.githubusercontent.com/Android-Mainli/Maven/master" }
+            maven { url 'https://jitpack.io' }
         }
     }
     //在项目module中添加依赖
-    implementation 'com.mainli:blur:1.0.0'
+    implementation 'com.mainli:blur:1.0.1'
     ```
 
 2. 减少依赖so库数量，默认aar中添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'.
