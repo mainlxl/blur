@@ -1,0 +1,98 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.Android-Mainli",
+    "module": "blur",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "blur-1.0.1.aar",
+          "url": "blur-1.0.1.aar",
+          "size": 21163,
+          "sha512": "4f0777f723ee0c89f2a2658959289f7ec4cc041e5ed1489e32482abeaa1a1a5742df1fc09bc2b0f3e2a0e88f86e77204f281b4fe83d45bcc4bf6b85a9dd30229",
+          "sha256": "7ab6ecf440820ab43b013fc3fb37481001a3e4df5ecdd9aa3bd84be2f5b34ec9",
+          "sha1": "b5452df5624d811ee0717eff520ef67e6b435947",
+          "md5": "07353b21cc2d186f7eb740a71500ebb3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "blur-1.0.1.aar",
+          "url": "blur-1.0.1.aar",
+          "size": 21163,
+          "sha512": "4f0777f723ee0c89f2a2658959289f7ec4cc041e5ed1489e32482abeaa1a1a5742df1fc09bc2b0f3e2a0e88f86e77204f281b4fe83d45bcc4bf6b85a9dd30229",
+          "sha256": "7ab6ecf440820ab43b013fc3fb37481001a3e4df5ecdd9aa3bd84be2f5b34ec9",
+          "sha1": "b5452df5624d811ee0717eff520ef67e6b435947",
+          "md5": "07353b21cc2d186f7eb740a71500ebb3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "blur-1.0.1-sources.jar",
+          "url": "blur-1.0.1-sources.jar",
+          "size": 1375,
+          "sha512": "eae4fb7a936e3caf520dcc666fd96e72f7ac4549aac3799de5036bf9fcfd20735243bc952a028ceb2ae8265cfab8a961b7e9c20afc29144910c038066bd74202",
+          "sha256": "845f3e3ad2ddda72234d0f178d6cc34be59bfa816181f4ac598d50459769e910",
+          "sha1": "d158446c610b9cb1b4f68d526151c855d07f0d9e",
+          "md5": "d4ec93732e59ecf4b629d8e17f7ba35d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "blur-1.0.1-javadoc.jar",
+          "url": "blur-1.0.1-javadoc.jar",
+          "size": 266825,
+          "sha512": "dd2bf6a3ec5ec2ed1d2c62450cce0ac16770a3ed9b25fabd1ecf0d5561c3d02b24ec1ce677f790ce7f59511c5c58deae52bd10977374630b607e3b7ec7e29b77",
+          "sha256": "f6d16a6d218284358250f5895e5f5826e14150cb7febef6d6eb7baf2b6fad76e",
+          "sha1": "48358c676876ef85e27d4b1d6bd759a7076dfea2",
+          "md5": "0f389c43642570b4d2d00a392418605c"
+        }
+      ]
+    }
+  ]
+}
