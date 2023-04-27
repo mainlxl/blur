@@ -1,7 +1,5 @@
 # 高斯模糊Bitmap
 
-[![](https://jitpack.io/v/mainlxl/blur.svg)](https://jitpack.io/#mainlxl/blur)
-
 ![动画](/image/donghua.gif)
 
 算法使用的是`intel`的**[IIR](https://software.intel.com/en-us/articles/iir-gaussian-blur-filter-implementation-using-intel-advanced-vector-extensions)**
@@ -22,7 +20,7 @@
 debug包中模糊效率稍慢,请使用release包测试
 
 ## 用法
-1. 依赖<br/>
+1. 依赖[![](https://jitpack.io/v/mainlxl/blur.svg)](https://jitpack.io/#mainlxl/blur)<br/>
 
     ```
     //在项目根目录中添加maven地址
