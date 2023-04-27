@@ -1,5 +1,7 @@
 # 高斯模糊Bitmap
 
+[![](https://jitpack.io/v/mainlxl/blur.svg)](https://jitpack.io/#mainlxl/blur)
+
 ![动画](/image/donghua.gif)
 
 算法使用的是`intel`的**[IIR](https://software.intel.com/en-us/articles/iir-gaussian-blur-filter-implementation-using-intel-advanced-vector-extensions)**
@@ -30,7 +32,7 @@ debug包中模糊效率稍慢,请使用release包测试
         }
     }
     //在项目module中添加依赖
-    implementation 'com.mainli:blur:1.0.1'
+    implementation 'com.github.mainlxl:blur:version'
     ```
 
 2. 减少依赖so库数量，默认aar中添加有'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'mips64', 'x86', 'x86_64'.
