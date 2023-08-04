@@ -1,3 +1,0 @@
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/5p3h2r6w/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/5p3h2r6w/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/5p3h2r6w/armeabi-v7a/CMakeFiles/blur-lib.dir

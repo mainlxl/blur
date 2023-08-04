@@ -1,3 +1,0 @@
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/RelWithDebInfo/2m5j2r44/x86/CMakeFiles/rebuild_cache.dir
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/RelWithDebInfo/2m5j2r44/x86/CMakeFiles/edit_cache.dir
-/Users/lixiaoliang04/work/blur-lib/blur/.cxx/RelWithDebInfo/2m5j2r44/x86/CMakeFiles/blur-lib.dir

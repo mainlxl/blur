@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/lixiaoliang04/work/blur-lib/blur/.cxx/Debug/5p3h2r6w/x86",
-  "command": "/Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android --gcc-toolchain=/Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/sysroot -Dblur_lib_EXPORTS -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem /Users/lixiaoliang04/Library/Android/sdk/ndk/16.1.4479499/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=14 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/blur-lib.dir/src/main/cpp/blur-lib.cpp.o -c /Users/lixiaoliang04/work/blur-lib/blur/src/main/cpp/blur-lib.cpp",
-  "file": "/Users/lixiaoliang04/work/blur-lib/blur/src/main/cpp/blur-lib.cpp"
-}
-]
