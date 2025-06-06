@@ -19,7 +19,29 @@
 | 20 |   96  |
 | 25 |   101 |
 
-debug包中模糊效率稍慢,请使用release包测试
+1. 测试设备选用Mi 10s(CPU:骁龙870 , RAM:8+3G)
+3. 测试图片选用800x991分辨率
+
+| 强度 | 用间(ms) |
+|:---:|:---:|
+| 5  |   76 |
+| 10 |   60 |
+| 15 |   60 |
+| 20 |   42  |
+| 25 |   43 |
+
+debug包中模糊效率稍慢,请使用release包测试 [apk](/app.apk)
+
+so库文件很小
+lib
+├── arm64-v8a
+│   └── [ 14K]  libblur-lib.so
+├── armeabi-v7a
+│   └── [ 17K]  libblur-lib.so
+├── x86
+│   └── [ 13K]  libblur-lib.so
+└── x86_64
+    └── [ 14K]  libblur-lib.so
 
 ## 用法
 1. 依赖<br/>
