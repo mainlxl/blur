@@ -33,15 +33,15 @@
 debug包中模糊效率稍慢,请使用release包测试 [apk](/app.apk)
 
 so库文件很小
-lib
-├── arm64-v8a
-│   └── [ 14K]  libblur-lib.so
-├── armeabi-v7a
-│   └── [ 17K]  libblur-lib.so
-├── x86
-│   └── [ 13K]  libblur-lib.so
-└── x86_64
-    └── [ 14K]  libblur-lib.so
+lib</br>
+├── arm64-v8a</br>
+│   └── [ 14K]  libblur-lib.so</br>
+├── armeabi-v7a</br>
+│   └── [ 17K]  libblur-lib.so</br>
+├── x86</br>
+│   └── [ 13K]  libblur-lib.so</br>
+└── x86_64</br>
+    └── [ 14K]  libblur-lib.so</br>
 
 ## 用法
 1. 依赖<br/>
